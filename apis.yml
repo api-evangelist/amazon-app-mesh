@@ -1,7 +1,7 @@
 aid: amazon-app-mesh
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-app-mesh/refs/heads/main/apis.yml
-name: AWS App Mesh API
+name: Amazon App Mesh
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 specificationVersion: '0.19'
