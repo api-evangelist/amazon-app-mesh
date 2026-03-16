@@ -1,9 +1,16 @@
+aid: amazon-app-mesh
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/amazon-app-mesh/refs/heads/main/apis.yml
 name: AWS App Mesh API
-description: AWS App Mesh is a service mesh that provides application-level networking to make it easy for your services to communicate with each other across multiple types of compute infrastructure. It standardizes how your services communicate, giving you end-to-end visibility and helping ensure high availability for your applications with consistent connectivity and traffic management for microservices.
-image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
-url: https://aws.amazon.com/app-mesh/
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+specificationVersion: '0.19'
+description: >-
+  AWS App Mesh is a service mesh that provides application-level networking to
+  make it easy for your services to communicate with each other across multiple
+  types of compute infrastructure.
 created: '2024-01-15'
-modified: '2026-03-13'
+modified: '2026-03-16'
 apis:
 - name: AWS App Mesh API
   description: >-
