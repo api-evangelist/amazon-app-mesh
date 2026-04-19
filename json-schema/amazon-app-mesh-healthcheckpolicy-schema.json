@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HealthCheckPolicy",
+  "description": "An object that represents the health check policy for a virtual node's listener.",
+  "type": "object",
+  "properties": {
+    "healthyThreshold": {},
+    "intervalMillis": {},
+    "path": {},
+    "port": {},
+    "protocol": {},
+    "timeoutMillis": {},
+    "unhealthyThreshold": {}
+  },
+  "required": [
+    "healthyThreshold",
+    "intervalMillis",
+    "protocol",
+    "timeoutMillis",
+    "unhealthyThreshold"
+  ]
+}

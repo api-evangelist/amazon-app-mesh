@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RouteRef",
+  "description": "An object that represents a route returned by a list operation.",
+  "type": "object",
+  "properties": {
+    "arn": {},
+    "createdAt": {},
+    "lastUpdatedAt": {},
+    "meshName": {},
+    "meshOwner": {},
+    "resourceOwner": {},
+    "routeName": {},
+    "version": {},
+    "virtualRouterName": {}
+  },
+  "required": [
+    "arn",
+    "createdAt",
+    "lastUpdatedAt",
+    "meshName",
+    "meshOwner",
+    "resourceOwner",
+    "routeName",
+    "version",
+    "virtualRouterName"
+  ]
+}

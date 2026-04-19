@@ -1,0 +1,7 @@
+{
+  "grpcRoute": "example-grpcRoute",
+  "http2Route": "example-http2Route",
+  "httpRoute": "example-httpRoute",
+  "priority": "example-priority",
+  "tcpRoute": "example-tcpRoute"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "WeightedTarget",
+  "type": "record",
+  "fields": [
+    {
+      "name": "port",
+      "type": "string"
+    },
+    {
+      "name": "virtualNode",
+      "type": "string"
+    },
+    {
+      "name": "weight",
+      "type": "string"
+    }
+  ]
+}

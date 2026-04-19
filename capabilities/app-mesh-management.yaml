@@ -1,0 +1,50 @@
+naftiko: 1.0.0-alpha1
+info:
+  label: App Mesh Management
+  description: Workflow for managing Amazon App Mesh API resources.
+  tags:
+  - Amazon
+  - AWS
+  created: '2026-04-19'
+  modified: '2026-04-19'
+binds:
+- namespace: env
+  keys:
+    AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+    AWS_REGION: AWS_REGION
+capability:
+  consumes:
+  - import: amazon-app-mesh
+    location: ./shared/amazon-app-mesh.yaml
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: app-mesh-management-api
+    resources:
+    - path: /v1/resources
+      name: resources
+      operations:
+      - method: GET
+        name: list-resources
+        description: List resources.
+        call: amazon-app-mesh.list-resources
+        with: {}
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: app-mesh-management-mcp
+    transport: http
+    tools:
+    - name: list-resources
+      description: List Amazon App Mesh API resources.
+      hints:
+        readOnly: true
+        openWorld: false
+      call: amazon-app-mesh.list-resources
+      with: {}
+      outputParameters:
+      - type: object
+        mapping: $.

@@ -1,0 +1,5 @@
+{
+  "port": "example-port",
+  "virtualNode": "example-virtualNode",
+  "weight": "example-weight"
+}

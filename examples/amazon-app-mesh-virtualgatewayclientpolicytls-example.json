@@ -1,0 +1,6 @@
+{
+  "certificate": "example-certificate",
+  "enforce": "example-enforce",
+  "ports": "example-ports",
+  "validation": "example-validation"
+}

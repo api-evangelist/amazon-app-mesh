@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "LoggingFormat",
+  "type": "record",
+  "fields": [
+    {
+      "name": "json",
+      "type": "string"
+    },
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ]
+}

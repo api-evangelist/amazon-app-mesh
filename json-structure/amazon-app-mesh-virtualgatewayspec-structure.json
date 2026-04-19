@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualGatewaySpec",
+  "type": "record",
+  "fields": [
+    {
+      "name": "backendDefaults",
+      "type": "string"
+    },
+    {
+      "name": "listeners",
+      "type": "string"
+    },
+    {
+      "name": "logging",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "headers": "example-headers",
+  "hostname": "example-hostname",
+  "method": "example-method",
+  "path": "example-path",
+  "port": "example-port",
+  "prefix": "example-prefix",
+  "queryParameters": "example-queryParameters"
+}

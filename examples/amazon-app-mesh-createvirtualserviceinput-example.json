@@ -1,0 +1,6 @@
+{
+  "clientToken": "example-clientToken",
+  "spec": "example-spec",
+  "tags": "example-tags",
+  "virtualServiceName": "example-virtualServiceName"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TcpRouteAction",
+  "description": "An object that represents the action to take if a match is determined.",
+  "type": "object",
+  "properties": {
+    "weightedTargets": {}
+  },
+  "required": [
+    "weightedTargets"
+  ]
+}

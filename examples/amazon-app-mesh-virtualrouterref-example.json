@@ -1,0 +1,10 @@
+{
+  "arn": "example-arn",
+  "createdAt": "example-createdAt",
+  "lastUpdatedAt": "example-lastUpdatedAt",
+  "meshName": "example-meshName",
+  "meshOwner": "example-meshOwner",
+  "resourceOwner": "example-resourceOwner",
+  "version": "example-version",
+  "virtualRouterName": "example-virtualRouterName"
+}

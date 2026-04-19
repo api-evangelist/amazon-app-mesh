@@ -1,0 +1,5 @@
+{
+  "action": "example-action",
+  "match": "example-match",
+  "timeout": "example-timeout"
+}

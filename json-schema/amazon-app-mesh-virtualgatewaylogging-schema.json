@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayLogging",
+  "description": "An object that represents logging information.",
+  "type": "object",
+  "properties": {
+    "accessLog": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GatewayRouteSpec",
+  "type": "record",
+  "fields": [
+    {
+      "name": "grpcRoute",
+      "type": "string"
+    },
+    {
+      "name": "http2Route",
+      "type": "string"
+    },
+    {
+      "name": "httpRoute",
+      "type": "string"
+    },
+    {
+      "name": "priority",
+      "type": "string"
+    }
+  ]
+}

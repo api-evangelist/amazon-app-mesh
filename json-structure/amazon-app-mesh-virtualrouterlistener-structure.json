@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualRouterListener",
+  "type": "record",
+  "fields": [
+    {
+      "name": "portMapping",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ClientPolicyTls",
+  "type": "record",
+  "fields": [
+    {
+      "name": "certificate",
+      "type": "string"
+    },
+    {
+      "name": "enforce",
+      "type": "string"
+    },
+    {
+      "name": "ports",
+      "type": "string"
+    },
+    {
+      "name": "validation",
+      "type": "string"
+    }
+  ]
+}

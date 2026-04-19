@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GatewayRouteTarget",
+  "description": "An object that represents a gateway route target.",
+  "type": "object",
+  "properties": {
+    "port": {},
+    "virtualService": {}
+  },
+  "required": [
+    "virtualService"
+  ]
+}

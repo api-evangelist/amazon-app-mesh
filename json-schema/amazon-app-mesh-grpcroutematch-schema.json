@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GrpcRouteMatch",
+  "description": "An object that represents the criteria for determining a request match.",
+  "type": "object",
+  "properties": {
+    "metadata": {},
+    "methodName": {},
+    "port": {},
+    "serviceName": {}
+  }
+}

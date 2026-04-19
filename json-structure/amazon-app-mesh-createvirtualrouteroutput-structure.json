@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "CreateVirtualRouterOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "virtualRouter",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ListenerTlsFileCertificate",
+  "description": "An object that represents a local file certificate. The certificate must meet specific requirements and you must have proxy authorization enabled. For more information, see <a href=\"https://docs.aws.amazon.com/app-mesh/latest/userguide/tls.html#virtual-node-tls-prerequisites\">Transport Layer Security (TLS)</a>.",
+  "type": "object",
+  "properties": {
+    "certificateChain": {},
+    "privateKey": {}
+  },
+  "required": [
+    "certificateChain",
+    "privateKey"
+  ]
+}

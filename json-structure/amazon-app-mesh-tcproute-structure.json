@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "TcpRoute",
+  "type": "record",
+  "fields": [
+    {
+      "name": "action",
+      "type": "string"
+    },
+    {
+      "name": "match",
+      "type": "string"
+    },
+    {
+      "name": "timeout",
+      "type": "string"
+    }
+  ]
+}

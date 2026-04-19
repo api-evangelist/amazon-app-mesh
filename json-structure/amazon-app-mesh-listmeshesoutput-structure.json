@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListMeshesOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "meshes",
+      "type": "string"
+    },
+    {
+      "name": "nextToken",
+      "type": "string"
+    }
+  ]
+}

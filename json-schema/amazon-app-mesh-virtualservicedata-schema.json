@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualServiceData",
+  "description": "An object that represents a virtual service returned by a describe operation.",
+  "type": "object",
+  "properties": {
+    "meshName": {},
+    "metadata": {
+      "$ref": "#/definitions/ResourceMetadata"
+    },
+    "spec": {},
+    "status": {},
+    "virtualServiceName": {}
+  },
+  "required": [
+    "meshName",
+    "metadata",
+    "spec",
+    "status",
+    "virtualServiceName"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "exact": "example-exact",
+  "prefix": "example-prefix",
+  "range": "example-range",
+  "regex": "example-regex",
+  "suffix": "example-suffix"
+}

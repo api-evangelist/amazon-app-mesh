@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualGatewayListener",
+  "type": "record",
+  "fields": [
+    {
+      "name": "connectionPool",
+      "type": "string"
+    },
+    {
+      "name": "healthCheck",
+      "type": "string"
+    },
+    {
+      "name": "portMapping",
+      "type": "string"
+    },
+    {
+      "name": "tls",
+      "type": "string"
+    }
+  ]
+}

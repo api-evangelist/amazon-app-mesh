@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GrpcMetadataMatchMethod",
+  "description": "An object representing the method header to be matched.",
+  "type": "object",
+  "properties": {
+    "exact": {},
+    "prefix": {},
+    "range": {
+      "$ref": "#/definitions/MatchRange"
+    },
+    "regex": {},
+    "suffix": {}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualServiceProvider",
+  "type": "record",
+  "fields": [
+    {
+      "name": "virtualNode",
+      "type": "string"
+    },
+    {
+      "name": "virtualRouter",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "DescribeVirtualGatewayOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "virtualGateway",
+      "type": "string"
+    }
+  ]
+}

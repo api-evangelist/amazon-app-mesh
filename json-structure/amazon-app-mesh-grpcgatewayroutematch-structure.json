@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GrpcGatewayRouteMatch",
+  "type": "record",
+  "fields": [
+    {
+      "name": "hostname",
+      "type": "string"
+    },
+    {
+      "name": "metadata",
+      "type": "string"
+    },
+    {
+      "name": "port",
+      "type": "string"
+    },
+    {
+      "name": "serviceName",
+      "type": "string"
+    }
+  ]
+}

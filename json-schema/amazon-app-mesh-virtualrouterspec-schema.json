@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualRouterSpec",
+  "description": "An object that represents the specification of a virtual router.",
+  "type": "object",
+  "properties": {
+    "listeners": {}
+  }
+}

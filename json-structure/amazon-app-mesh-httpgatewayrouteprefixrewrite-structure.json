@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "HttpGatewayRoutePrefixRewrite",
+  "type": "record",
+  "fields": [
+    {
+      "name": "defaultPrefix",
+      "type": "string"
+    },
+    {
+      "name": "value",
+      "type": "string"
+    }
+  ]
+}

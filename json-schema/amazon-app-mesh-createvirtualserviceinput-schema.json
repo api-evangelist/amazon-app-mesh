@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreateVirtualServiceInput",
+  "description": "<zonbook></zonbook><xhtml></xhtml>",
+  "type": "object",
+  "properties": {
+    "clientToken": {},
+    "spec": {},
+    "tags": {},
+    "virtualServiceName": {}
+  },
+  "required": [
+    "spec",
+    "virtualServiceName"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "hostname": "example-hostname",
+  "metadata": "example-metadata",
+  "port": "example-port",
+  "serviceName": "example-serviceName"
+}

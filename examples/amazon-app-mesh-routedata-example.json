@@ -1,0 +1,8 @@
+{
+  "meshName": "example-meshName",
+  "metadata": "example-metadata",
+  "routeName": "example-routeName",
+  "spec": "example-spec",
+  "status": "example-status",
+  "virtualRouterName": "example-virtualRouterName"
+}

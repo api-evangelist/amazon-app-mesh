@@ -1,0 +1,6 @@
+{
+  "action": "example-action",
+  "match": "example-match",
+  "retryPolicy": "example-retryPolicy",
+  "timeout": "example-timeout"
+}

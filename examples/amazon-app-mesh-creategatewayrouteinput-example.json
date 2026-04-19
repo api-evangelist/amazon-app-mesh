@@ -1,0 +1,6 @@
+{
+  "clientToken": "example-clientToken",
+  "gatewayRouteName": "example-gatewayRouteName",
+  "spec": "example-spec",
+  "tags": "example-tags"
+}

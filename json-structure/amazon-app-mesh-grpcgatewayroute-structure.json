@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GrpcGatewayRoute",
+  "type": "record",
+  "fields": [
+    {
+      "name": "action",
+      "type": "string"
+    },
+    {
+      "name": "match",
+      "type": "string"
+    }
+  ]
+}

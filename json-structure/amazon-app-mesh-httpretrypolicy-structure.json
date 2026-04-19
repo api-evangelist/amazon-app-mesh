@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "HttpRetryPolicy",
+  "type": "record",
+  "fields": [
+    {
+      "name": "httpRetryEvents",
+      "type": "string"
+    },
+    {
+      "name": "maxRetries",
+      "type": "string"
+    },
+    {
+      "name": "perRetryTimeout",
+      "type": "string"
+    },
+    {
+      "name": "tcpRetryEvents",
+      "type": "string"
+    }
+  ]
+}

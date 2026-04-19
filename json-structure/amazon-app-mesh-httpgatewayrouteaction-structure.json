@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "HttpGatewayRouteAction",
+  "type": "record",
+  "fields": [
+    {
+      "name": "rewrite",
+      "type": "string"
+    },
+    {
+      "name": "target",
+      "type": "string"
+    }
+  ]
+}

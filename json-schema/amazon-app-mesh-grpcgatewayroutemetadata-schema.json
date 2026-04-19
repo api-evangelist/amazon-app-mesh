@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GrpcGatewayRouteMetadata",
+  "description": "An object representing the metadata of the gateway route.",
+  "type": "object",
+  "properties": {
+    "invert": {},
+    "match": {},
+    "name": {}
+  },
+  "required": [
+    "name"
+  ]
+}

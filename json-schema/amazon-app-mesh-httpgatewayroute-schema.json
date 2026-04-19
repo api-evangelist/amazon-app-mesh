@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HttpGatewayRoute",
+  "description": "An object that represents an HTTP gateway route.",
+  "type": "object",
+  "properties": {
+    "action": {},
+    "match": {}
+  },
+  "required": [
+    "action",
+    "match"
+  ]
+}

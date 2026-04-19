@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewaySpec",
+  "description": "An object that represents the specification of a service mesh resource.",
+  "type": "object",
+  "properties": {
+    "backendDefaults": {},
+    "listeners": {},
+    "logging": {
+      "$ref": "#/definitions/VirtualGatewayLogging"
+    }
+  },
+  "required": [
+    "listeners"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ResourceMetadata",
+  "description": "An object that represents metadata for a resource.",
+  "type": "object",
+  "properties": {
+    "arn": {},
+    "createdAt": {},
+    "lastUpdatedAt": {},
+    "meshOwner": {},
+    "resourceOwner": {},
+    "uid": {},
+    "version": {}
+  },
+  "required": [
+    "arn",
+    "createdAt",
+    "lastUpdatedAt",
+    "meshOwner",
+    "resourceOwner",
+    "uid",
+    "version"
+  ]
+}

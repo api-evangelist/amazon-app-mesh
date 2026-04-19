@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListenerTls",
+  "type": "record",
+  "fields": [
+    {
+      "name": "certificate",
+      "type": "string"
+    },
+    {
+      "name": "mode",
+      "type": "string"
+    },
+    {
+      "name": "validation",
+      "type": "string"
+    }
+  ]
+}

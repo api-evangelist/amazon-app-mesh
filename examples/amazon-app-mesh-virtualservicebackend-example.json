@@ -1,0 +1,4 @@
+{
+  "clientPolicy": "example-clientPolicy",
+  "virtualServiceName": "example-virtualServiceName"
+}

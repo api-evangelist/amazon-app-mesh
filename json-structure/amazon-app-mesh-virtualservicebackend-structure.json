@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualServiceBackend",
+  "type": "record",
+  "fields": [
+    {
+      "name": "clientPolicy",
+      "type": "string"
+    },
+    {
+      "name": "virtualServiceName",
+      "type": "string"
+    }
+  ]
+}

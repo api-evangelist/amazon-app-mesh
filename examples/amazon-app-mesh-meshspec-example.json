@@ -1,0 +1,4 @@
+{
+  "egressFilter": "example-egressFilter",
+  "serviceDiscovery": "example-serviceDiscovery"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GatewayRouteTarget",
+  "type": "record",
+  "fields": [
+    {
+      "name": "port",
+      "type": "string"
+    },
+    {
+      "name": "virtualService",
+      "type": "string"
+    }
+  ]
+}

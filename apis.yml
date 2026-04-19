@@ -10,65 +10,119 @@ description: >-
   make it easy for your services to communicate with each other across multiple
   types of compute infrastructure.
 created: '2024-01-15'
-modified: '2026-03-16'
+modified: '2026-04-19'
 apis:
-  - name: AWS App Mesh API
-    description: >-
-      The AWS App Mesh API provides programmatic access to configure and manage
-      service mesh resources for microservices. It enables developers to create
-      and manage meshes, virtual services, virtual nodes, virtual routers, and
-      routes, providing fine-grained control over service-to-service communication,
-      traffic routing, and observability.
-    image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
-    humanURL: https://aws.amazon.com/app-mesh/
-    baseURL: https://appmesh.amazonaws.com
-    tags:
-      - AWS
-      - Microservices
-      - Networking
-      - Service Mesh
-    properties:
-      - type: Documentation
-        url: https://docs.aws.amazon.com/app-mesh/
-      - type: OpenAPI
-        url: openapi/amazon-app-mesh-openapi.yml
-      - type: Pricing
-        url: https://aws.amazon.com/app-mesh/pricing/
-      - type: Getting Started
-        url: https://aws.amazon.com/app-mesh/getting-started/
-      - type: FAQ
-        url: https://aws.amazon.com/app-mesh/faqs/
-common:
-  - type: Portal
-    url: https://aws.amazon.com/
-  - type: Website
-    url: https://aws.amazon.com/app-mesh/
-  - type: Documentation
-    url: https://docs.aws.amazon.com/app-mesh/
-  - type: Terms of Service
-    url: https://aws.amazon.com/service-terms/
-  - type: Privacy Policy
-    url: https://aws.amazon.com/privacy/
-  - type: Support
-    url: https://aws.amazon.com/premiumsupport/
-  - type: GitHub Organization
-    url: https://github.com/aws
-  - type: Console
-    url: https://console.aws.amazon.com/appmesh/
-  - type: Sign Up
-    url: https://signin.aws.amazon.com/signup?request_type=register
-  - type: Login
-    url: https://aws.amazon.com/console/
-  - type: Status
-    url: https://health.aws.amazon.com/health/status
-  - type: Contact
-    url: https://aws.amazon.com/contact-us/
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
-    url: https://apievangelist.com
-tags:
+- name: AWS App Mesh API
+  description: >-
+    The AWS App Mesh API provides programmatic access to configure and manage
+    service mesh resources for microservices. It enables developers to create
+    and manage meshes, virtual services, virtual nodes, virtual routers, and
+    routes, providing fine-grained control over service-to-service communication,
+    traffic routing, and observability.
+  image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+  humanURL: https://aws.amazon.com/app-mesh/
+  baseURL: https://appmesh.amazonaws.com
+  tags:
   - AWS
   - Microservices
   - Networking
   - Service Mesh
+  properties:
+  - type: Documentation
+    url: https://docs.aws.amazon.com/app-mesh/
+  - type: OpenAPI
+    url: openapi/amazon-app-mesh-openapi.yaml
+  - type: Pricing
+    url: https://aws.amazon.com/app-mesh/pricing/
+  - type: Getting Started
+    url: https://aws.amazon.com/app-mesh/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/app-mesh/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accesslog-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accountid-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-arn-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattribute-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattributekey-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accesslog-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accountid-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-arn-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-app-mesh-context.jsonld
+common:
+- type: Portal
+  url: https://aws.amazon.com/
+- type: Website
+  url: https://aws.amazon.com/app-mesh/
+- type: Documentation
+  url: https://docs.aws.amazon.com/app-mesh/
+- type: TermsOfService
+  url: https://aws.amazon.com/service-terms/
+- type: PrivacyPolicy
+  url: https://aws.amazon.com/privacy/
+- type: Support
+  url: https://aws.amazon.com/premiumsupport/
+- type: GitHubOrganization
+  url: https://github.com/aws
+- type: Console
+  url: https://console.aws.amazon.com/appmesh/
+- type: SignUp
+  url: https://signin.aws.amazon.com/signup?request_type=register
+- type: Login
+  url: https://aws.amazon.com/console/
+- type: Status
+  url: https://health.aws.amazon.com/health/status
+- type: Contact
+  url: https://aws.amazon.com/contact-us/
+- type: SpectralRules
+  url: rules/amazon-app-mesh-spectral-rules.yml
+- type: NaftikoCapability
+  url: capabilities/app-mesh-management.yaml
+- type: Vocabulary
+  url: vocabulary/amazon-app-mesh-vocabulary.yaml
+- type: Features
+  data:
+  - name: Service Mesh Management
+    description: Create and manage service meshes that define the logical boundary for network traffic between microservices.
+  - name: Virtual Service Configuration
+    description: Define virtual services that act as logical routers for microservice traffic, abstracting the underlying routing logic.
+  - name: Traffic Routing Control
+    description: Configure virtual routers and routes to implement traffic management policies including weighted routing and retry policies.
+  - name: Virtual Node Management
+    description: Manage virtual nodes representing microservice task groups with service discovery and health check configurations.
+  - name: Observability Integration
+    description: Configure access logs and tracing for end-to-end visibility of traffic flowing through the service mesh.
+- type: UseCases
+  data:
+  - name: Microservices Traffic Management
+    description: Control traffic routing between microservices with weighted routing, canary deployments, and circuit breaking.
+  - name: Service Discovery Integration
+    description: Integrate App Mesh with AWS Cloud Map for automatic service discovery across compute types.
+  - name: Multi-Cluster Networking
+    description: Connect services running on ECS, EKS, and EC2 instances within a unified service mesh for consistent networking policies.
+- type: Integrations
+  data:
+  - name: AWS ECS
+    description: Deploy App Mesh sidecar proxies alongside ECS tasks for automatic traffic interception and routing.
+  - name: AWS EKS
+    description: Run App Mesh with Kubernetes via the App Mesh Controller for Kubernetes for native K8s integration.
+  - name: AWS X-Ray
+    description: Use X-Ray for distributed tracing of requests flowing through the App Mesh service mesh.
+  - name: AWS Cloud Map
+    description: Integrate App Mesh with Cloud Map for service discovery across ECS, EKS, and EC2 compute.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+  url: https://apievangelist.com
+tags:
+- AWS
+- Microservices
+- Networking
+- Service Mesh

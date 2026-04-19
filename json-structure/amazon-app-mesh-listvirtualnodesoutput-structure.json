@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListVirtualNodesOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "nextToken",
+      "type": "string"
+    },
+    {
+      "name": "virtualNodes",
+      "type": "string"
+    }
+  ]
+}

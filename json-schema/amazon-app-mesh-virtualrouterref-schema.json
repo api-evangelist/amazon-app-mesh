@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualRouterRef",
+  "description": "An object that represents a virtual router returned by a list operation.",
+  "type": "object",
+  "properties": {
+    "arn": {},
+    "createdAt": {},
+    "lastUpdatedAt": {},
+    "meshName": {},
+    "meshOwner": {},
+    "resourceOwner": {},
+    "version": {},
+    "virtualRouterName": {}
+  },
+  "required": [
+    "arn",
+    "createdAt",
+    "lastUpdatedAt",
+    "meshName",
+    "meshOwner",
+    "resourceOwner",
+    "version",
+    "virtualRouterName"
+  ]
+}

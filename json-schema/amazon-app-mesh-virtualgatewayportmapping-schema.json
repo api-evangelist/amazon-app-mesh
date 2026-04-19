@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayPortMapping",
+  "description": "An object that represents a port mapping.",
+  "type": "object",
+  "properties": {
+    "port": {},
+    "protocol": {}
+  },
+  "required": [
+    "port",
+    "protocol"
+  ]
+}

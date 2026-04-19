@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GrpcRoute",
+  "description": "An object that represents a gRPC route type.",
+  "type": "object",
+  "properties": {
+    "action": {},
+    "match": {},
+    "retryPolicy": {},
+    "timeout": {}
+  },
+  "required": [
+    "action",
+    "match"
+  ]
+}

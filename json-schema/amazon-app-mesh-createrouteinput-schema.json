@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreateRouteInput",
+  "description": "<zonbook></zonbook><xhtml></xhtml>",
+  "type": "object",
+  "properties": {
+    "clientToken": {},
+    "routeName": {},
+    "spec": {},
+    "tags": {}
+  },
+  "required": [
+    "routeName",
+    "spec"
+  ]
+}

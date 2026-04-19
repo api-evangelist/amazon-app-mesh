@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RouteData",
+  "description": "An object that represents a route returned by a describe operation.",
+  "type": "object",
+  "properties": {
+    "meshName": {},
+    "metadata": {},
+    "routeName": {},
+    "spec": {},
+    "status": {},
+    "virtualRouterName": {}
+  },
+  "required": [
+    "meshName",
+    "metadata",
+    "routeName",
+    "spec",
+    "status",
+    "virtualRouterName"
+  ]
+}

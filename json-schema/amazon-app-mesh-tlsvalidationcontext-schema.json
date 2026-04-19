@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TlsValidationContext",
+  "description": "An object that represents how the proxy will validate its peer during Transport Layer Security (TLS) negotiation.",
+  "type": "object",
+  "properties": {
+    "subjectAlternativeNames": {},
+    "trust": {}
+  },
+  "required": [
+    "trust"
+  ]
+}

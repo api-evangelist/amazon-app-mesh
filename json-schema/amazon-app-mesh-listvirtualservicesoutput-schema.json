@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ListVirtualServicesOutput",
+  "description": "<zonbook></zonbook><xhtml></xhtml>",
+  "type": "object",
+  "properties": {
+    "nextToken": {},
+    "virtualServices": {}
+  },
+  "required": [
+    "virtualServices"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualRouterStatus",
+  "description": "An object that represents the status of a virtual router. ",
+  "type": "object",
+  "properties": {
+    "status": {}
+  },
+  "required": [
+    "status"
+  ]
+}

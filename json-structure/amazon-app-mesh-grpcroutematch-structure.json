@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GrpcRouteMatch",
+  "type": "record",
+  "fields": [
+    {
+      "name": "metadata",
+      "type": "string"
+    },
+    {
+      "name": "methodName",
+      "type": "string"
+    },
+    {
+      "name": "port",
+      "type": "string"
+    },
+    {
+      "name": "serviceName",
+      "type": "string"
+    }
+  ]
+}

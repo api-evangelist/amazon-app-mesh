@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "SubjectAlternativeNames",
+  "type": "record",
+  "fields": [
+    {
+      "name": "match",
+      "type": "string"
+    }
+  ]
+}

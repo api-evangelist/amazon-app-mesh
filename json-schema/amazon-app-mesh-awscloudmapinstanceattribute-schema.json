@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AwsCloudMapInstanceAttribute",
+  "description": "<p>An object that represents the Cloud Map attribute information for your virtual node.</p> <note> <p>Cloud Map is not available in the eu-south-1 Region.</p> </note>",
+  "type": "object",
+  "properties": {
+    "key": {},
+    "value": {}
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}

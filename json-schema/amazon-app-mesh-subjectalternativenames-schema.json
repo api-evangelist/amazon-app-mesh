@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SubjectAlternativeNames",
+  "description": "An object that represents the subject alternative names secured by the certificate.",
+  "type": "object",
+  "properties": {
+    "match": {}
+  },
+  "required": [
+    "match"
+  ]
+}

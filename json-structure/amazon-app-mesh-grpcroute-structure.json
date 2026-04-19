@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GrpcRoute",
+  "type": "record",
+  "fields": [
+    {
+      "name": "action",
+      "type": "string"
+    },
+    {
+      "name": "match",
+      "type": "string"
+    },
+    {
+      "name": "retryPolicy",
+      "type": "string"
+    },
+    {
+      "name": "timeout",
+      "type": "string"
+    }
+  ]
+}

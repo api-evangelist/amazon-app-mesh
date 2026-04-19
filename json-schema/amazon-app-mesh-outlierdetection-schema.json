@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OutlierDetection",
+  "description": "An object that represents the outlier detection for a virtual node's listener.",
+  "type": "object",
+  "properties": {
+    "baseEjectionDuration": {},
+    "interval": {},
+    "maxEjectionPercent": {},
+    "maxServerErrors": {}
+  },
+  "required": [
+    "baseEjectionDuration",
+    "interval",
+    "maxEjectionPercent",
+    "maxServerErrors"
+  ]
+}

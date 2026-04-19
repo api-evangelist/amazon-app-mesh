@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClientPolicyTls",
+  "description": "A reference to an object that represents a Transport Layer Security (TLS) client policy.",
+  "type": "object",
+  "properties": {
+    "certificate": {},
+    "enforce": {},
+    "ports": {},
+    "validation": {}
+  },
+  "required": [
+    "validation"
+  ]
+}

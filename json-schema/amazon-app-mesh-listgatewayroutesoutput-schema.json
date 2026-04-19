@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ListGatewayRoutesOutput",
+  "type": "object",
+  "properties": {
+    "gatewayRoutes": {},
+    "nextToken": {}
+  },
+  "required": [
+    "gatewayRoutes"
+  ]
+}

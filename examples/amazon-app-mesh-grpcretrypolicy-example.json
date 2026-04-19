@@ -1,0 +1,7 @@
+{
+  "grpcRetryEvents": "example-grpcRetryEvents",
+  "httpRetryEvents": "example-httpRetryEvents",
+  "maxRetries": "example-maxRetries",
+  "perRetryTimeout": "example-perRetryTimeout",
+  "tcpRetryEvents": "example-tcpRetryEvents"
+}

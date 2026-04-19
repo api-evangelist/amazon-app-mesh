@@ -1,0 +1,8 @@
+{
+  "gatewayRouteName": "example-gatewayRouteName",
+  "meshName": "example-meshName",
+  "metadata": "example-metadata",
+  "spec": "example-spec",
+  "status": "example-status",
+  "virtualGatewayName": "example-virtualGatewayName"
+}

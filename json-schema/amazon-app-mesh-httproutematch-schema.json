@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HttpRouteMatch",
+  "description": "An object that represents the requirements for a route to match HTTP requests for a virtual router.",
+  "type": "object",
+  "properties": {
+    "headers": {},
+    "method": {},
+    "path": {},
+    "port": {},
+    "prefix": {},
+    "queryParameters": {},
+    "scheme": {}
+  }
+}

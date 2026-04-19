@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "TcpTimeout",
+  "type": "record",
+  "fields": [
+    {
+      "name": "idle",
+      "type": "string"
+    }
+  ]
+}

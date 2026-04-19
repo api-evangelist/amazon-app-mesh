@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualRouterListener",
+  "description": "An object that represents a virtual router listener.",
+  "type": "object",
+  "properties": {
+    "portMapping": {
+      "$ref": "#/definitions/PortMapping"
+    }
+  },
+  "required": [
+    "portMapping"
+  ]
+}

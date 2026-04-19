@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListGatewayRoutesOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "gatewayRoutes",
+      "type": "string"
+    },
+    {
+      "name": "nextToken",
+      "type": "string"
+    }
+  ]
+}

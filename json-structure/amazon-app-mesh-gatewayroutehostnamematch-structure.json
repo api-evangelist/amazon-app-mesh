@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "GatewayRouteHostnameMatch",
+  "type": "record",
+  "fields": [
+    {
+      "name": "exact",
+      "type": "string"
+    },
+    {
+      "name": "suffix",
+      "type": "string"
+    }
+  ]
+}

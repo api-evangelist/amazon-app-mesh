@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayFileAccessLog",
+  "description": "An object that represents an access log file.",
+  "type": "object",
+  "properties": {
+    "format": {},
+    "path": {}
+  },
+  "required": [
+    "path"
+  ]
+}

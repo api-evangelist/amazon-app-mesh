@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MeshSpec",
+  "description": "An object that represents the specification of a service mesh.",
+  "type": "object",
+  "properties": {
+    "egressFilter": {},
+    "serviceDiscovery": {
+      "$ref": "#/definitions/MeshServiceDiscovery"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EgressFilter",
+  "description": "An object that represents the egress filter rules for a service mesh.",
+  "type": "object",
+  "properties": {
+    "type": {}
+  },
+  "required": [
+    "type"
+  ]
+}

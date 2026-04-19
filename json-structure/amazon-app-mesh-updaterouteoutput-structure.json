@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "UpdateRouteOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "route",
+      "type": "string"
+    }
+  ]
+}

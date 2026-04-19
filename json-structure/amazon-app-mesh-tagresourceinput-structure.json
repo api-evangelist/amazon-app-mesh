@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "TagResourceInput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "tags",
+      "type": "string"
+    }
+  ]
+}

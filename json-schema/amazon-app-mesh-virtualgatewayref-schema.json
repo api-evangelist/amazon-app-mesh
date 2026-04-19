@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayRef",
+  "description": "An object that represents a virtual gateway returned by a list operation.",
+  "type": "object",
+  "properties": {
+    "arn": {},
+    "createdAt": {},
+    "lastUpdatedAt": {},
+    "meshName": {},
+    "meshOwner": {},
+    "resourceOwner": {},
+    "version": {},
+    "virtualGatewayName": {}
+  },
+  "required": [
+    "arn",
+    "createdAt",
+    "lastUpdatedAt",
+    "meshName",
+    "meshOwner",
+    "resourceOwner",
+    "version",
+    "virtualGatewayName"
+  ]
+}

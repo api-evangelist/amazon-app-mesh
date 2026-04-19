@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HttpGatewayRoutePrefixRewrite",
+  "description": "An object representing the beginning characters of the route to rewrite.",
+  "type": "object",
+  "properties": {
+    "defaultPrefix": {},
+    "value": {}
+  }
+}

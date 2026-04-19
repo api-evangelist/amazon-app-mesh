@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "UpdateVirtualRouterInput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "clientToken",
+      "type": "string"
+    },
+    {
+      "name": "spec",
+      "type": "string"
+    }
+  ]
+}

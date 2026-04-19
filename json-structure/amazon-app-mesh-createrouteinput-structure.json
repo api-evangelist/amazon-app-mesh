@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "CreateRouteInput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "clientToken",
+      "type": "string"
+    },
+    {
+      "name": "routeName",
+      "type": "string"
+    },
+    {
+      "name": "spec",
+      "type": "string"
+    },
+    {
+      "name": "tags",
+      "type": "string"
+    }
+  ]
+}

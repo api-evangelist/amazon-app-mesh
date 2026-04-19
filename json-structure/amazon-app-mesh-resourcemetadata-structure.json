@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ResourceMetadata",
+  "type": "record",
+  "fields": [
+    {
+      "name": "arn",
+      "type": "string"
+    },
+    {
+      "name": "createdAt",
+      "type": "string"
+    },
+    {
+      "name": "lastUpdatedAt",
+      "type": "string"
+    },
+    {
+      "name": "meshOwner",
+      "type": "string"
+    },
+    {
+      "name": "resourceOwner",
+      "type": "string"
+    },
+    {
+      "name": "uid",
+      "type": "string"
+    },
+    {
+      "name": "version",
+      "type": "string"
+    }
+  ]
+}

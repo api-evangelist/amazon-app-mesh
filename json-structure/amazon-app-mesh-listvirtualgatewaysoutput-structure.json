@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListVirtualGatewaysOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "nextToken",
+      "type": "string"
+    },
+    {
+      "name": "virtualGateways",
+      "type": "string"
+    }
+  ]
+}

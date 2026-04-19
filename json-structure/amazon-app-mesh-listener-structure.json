@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "Listener",
+  "type": "record",
+  "fields": [
+    {
+      "name": "connectionPool",
+      "type": "string"
+    },
+    {
+      "name": "healthCheck",
+      "type": "string"
+    },
+    {
+      "name": "outlierDetection",
+      "type": "string"
+    },
+    {
+      "name": "portMapping",
+      "type": "string"
+    },
+    {
+      "name": "timeout",
+      "type": "string"
+    },
+    {
+      "name": "tls",
+      "type": "string"
+    }
+  ]
+}

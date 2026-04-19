@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UpdateMeshOutput",
+  "description": "<zonbook></zonbook><xhtml></xhtml>",
+  "type": "object",
+  "properties": {
+    "mesh": {
+      "$ref": "#/definitions/MeshData"
+    }
+  },
+  "required": [
+    "mesh"
+  ]
+}

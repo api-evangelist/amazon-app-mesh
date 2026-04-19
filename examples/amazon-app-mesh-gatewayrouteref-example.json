@@ -1,0 +1,11 @@
+{
+  "arn": "example-arn",
+  "createdAt": "example-createdAt",
+  "gatewayRouteName": "example-gatewayRouteName",
+  "lastUpdatedAt": "example-lastUpdatedAt",
+  "meshName": "example-meshName",
+  "meshOwner": "example-meshOwner",
+  "resourceOwner": "example-resourceOwner",
+  "version": "example-version",
+  "virtualGatewayName": "example-virtualGatewayName"
+}

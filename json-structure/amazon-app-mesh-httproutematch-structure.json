@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "HttpRouteMatch",
+  "type": "record",
+  "fields": [
+    {
+      "name": "headers",
+      "type": "string"
+    },
+    {
+      "name": "method",
+      "type": "string"
+    },
+    {
+      "name": "path",
+      "type": "string"
+    },
+    {
+      "name": "port",
+      "type": "string"
+    },
+    {
+      "name": "prefix",
+      "type": "string"
+    },
+    {
+      "name": "queryParameters",
+      "type": "string"
+    },
+    {
+      "name": "scheme",
+      "type": "string"
+    }
+  ]
+}

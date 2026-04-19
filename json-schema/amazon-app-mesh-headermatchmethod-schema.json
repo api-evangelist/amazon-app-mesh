@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HeaderMatchMethod",
+  "description": "An object that represents the method and value to match with the header value sent in a request. Specify one match method.",
+  "type": "object",
+  "properties": {
+    "exact": {},
+    "prefix": {},
+    "range": {},
+    "regex": {},
+    "suffix": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListenerTimeout",
+  "type": "record",
+  "fields": [
+    {
+      "name": "grpc",
+      "type": "string"
+    },
+    {
+      "name": "http",
+      "type": "string"
+    },
+    {
+      "name": "http2",
+      "type": "string"
+    },
+    {
+      "name": "tcp",
+      "type": "string"
+    }
+  ]
+}

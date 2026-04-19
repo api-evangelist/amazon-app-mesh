@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UpdateVirtualServiceInput",
+  "description": "<zonbook></zonbook><xhtml></xhtml>",
+  "type": "object",
+  "properties": {
+    "clientToken": {},
+    "spec": {}
+  },
+  "required": [
+    "spec"
+  ]
+}

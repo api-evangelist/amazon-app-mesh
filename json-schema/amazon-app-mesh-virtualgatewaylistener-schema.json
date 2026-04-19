@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayListener",
+  "description": "An object that represents a listener for a virtual gateway.",
+  "type": "object",
+  "properties": {
+    "connectionPool": {},
+    "healthCheck": {},
+    "portMapping": {},
+    "tls": {}
+  },
+  "required": [
+    "portMapping"
+  ]
+}

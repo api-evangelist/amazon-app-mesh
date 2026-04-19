@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ServiceDiscovery",
+  "type": "record",
+  "fields": [
+    {
+      "name": "awsCloudMap",
+      "type": "string"
+    },
+    {
+      "name": "dns",
+      "type": "string"
+    }
+  ]
+}

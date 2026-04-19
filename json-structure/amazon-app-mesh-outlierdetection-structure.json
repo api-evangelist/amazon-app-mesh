@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "OutlierDetection",
+  "type": "record",
+  "fields": [
+    {
+      "name": "baseEjectionDuration",
+      "type": "string"
+    },
+    {
+      "name": "interval",
+      "type": "string"
+    },
+    {
+      "name": "maxEjectionPercent",
+      "type": "string"
+    },
+    {
+      "name": "maxServerErrors",
+      "type": "string"
+    }
+  ]
+}

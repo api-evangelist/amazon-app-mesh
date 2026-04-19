@@ -1,0 +1,9 @@
+{
+  "arn": "example-arn",
+  "createdAt": "example-createdAt",
+  "lastUpdatedAt": "example-lastUpdatedAt",
+  "meshOwner": "example-meshOwner",
+  "resourceOwner": "example-resourceOwner",
+  "uid": "example-uid",
+  "version": "example-version"
+}

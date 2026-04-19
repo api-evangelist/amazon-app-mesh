@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayTlsValidationContext",
+  "description": "An object that represents a Transport Layer Security (TLS) validation context.",
+  "type": "object",
+  "properties": {
+    "subjectAlternativeNames": {},
+    "trust": {}
+  },
+  "required": [
+    "trust"
+  ]
+}

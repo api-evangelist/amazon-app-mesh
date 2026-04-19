@@ -1,0 +1,85 @@
+vocabulary: 1.0.0
+info:
+  provider: Amazon App Mesh API
+  description: Vocabulary for the Amazon App Mesh API API surface.
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - namespace: amazon-app-mesh
+    name: Amazon App Mesh API
+    version: '2024-01-01'
+    baseUrl: https://appmesh.amazonaws.com
+    status: active
+  resources:
+  - name: resources
+    description: Amazon App Mesh API resources.
+    apis:
+    - amazon-app-mesh
+    actions:
+    - list
+    - create
+    - get
+    - update
+    - delete
+  actions:
+  - name: list
+    description: List resources.
+    httpMethod: GET
+    pattern: query
+  - name: create
+    description: Create a resource.
+    httpMethod: POST
+    pattern: write
+  - name: get
+    description: Get a resource.
+    httpMethod: GET
+    pattern: read
+  - name: update
+    description: Update a resource.
+    httpMethod: PUT
+    pattern: write
+  - name: delete
+    description: Delete a resource.
+    httpMethod: DELETE
+    pattern: delete
+  authentication:
+    schemes:
+    - type: aws-sigv4
+      description: AWS Signature Version 4.
+      service: app-mesh
+capability:
+  workflows:
+  - name: App Mesh Management
+    file: capabilities/app-mesh-management.yaml
+    description: Manage Amazon App Mesh API resources.
+    apisCombined:
+    - Amazon App Mesh API
+    toolCount: 1
+    personas:
+    - Platform Engineer
+    - DevOps Engineer
+  personas:
+  - id: platform-engineer
+    name: Platform Engineer
+    description: Engineer managing microservices networking infrastructure.
+    workflows:
+    - App Mesh Management
+  - id: devops-engineer
+    name: DevOps Engineer
+    description: Engineer managing service deployments and traffic routing.
+    workflows:
+    - App Mesh Management
+  namespaces:
+    consumed:
+    - amazon-app-mesh
+    rest:
+    - app-mesh-management-api (port 8080)
+    - amazon-app-mesh-api (port 8114)
+    mcp:
+    - app-mesh-management-mcp (port 9090)
+    - amazon-app-mesh-mcp (port 9114)
+  binds:
+  - AWS_ACCESS_KEY_ID
+  - AWS_SECRET_ACCESS_KEY
+  - AWS_REGION

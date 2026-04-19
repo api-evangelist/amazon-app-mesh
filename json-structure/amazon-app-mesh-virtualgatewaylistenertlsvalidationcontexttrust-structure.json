@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualGatewayListenerTlsValidationContextTrust",
+  "type": "record",
+  "fields": [
+    {
+      "name": "file",
+      "type": "string"
+    },
+    {
+      "name": "sds",
+      "type": "string"
+    }
+  ]
+}

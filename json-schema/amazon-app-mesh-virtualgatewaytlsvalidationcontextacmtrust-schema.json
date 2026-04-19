@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VirtualGatewayTlsValidationContextAcmTrust",
+  "description": "An object that represents a Transport Layer Security (TLS) validation context trust for an Certificate Manager certificate.",
+  "type": "object",
+  "properties": {
+    "certificateAuthorityArns": {}
+  },
+  "required": [
+    "certificateAuthorityArns"
+  ]
+}

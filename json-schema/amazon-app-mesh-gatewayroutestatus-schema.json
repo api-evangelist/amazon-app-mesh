@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GatewayRouteStatus",
+  "description": "An object that represents the current status of a gateway route.",
+  "type": "object",
+  "properties": {
+    "status": {}
+  },
+  "required": [
+    "status"
+  ]
+}

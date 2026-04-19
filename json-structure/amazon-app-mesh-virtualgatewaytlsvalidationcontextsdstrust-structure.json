@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualGatewayTlsValidationContextSdsTrust",
+  "type": "record",
+  "fields": [
+    {
+      "name": "secretName",
+      "type": "string"
+    }
+  ]
+}

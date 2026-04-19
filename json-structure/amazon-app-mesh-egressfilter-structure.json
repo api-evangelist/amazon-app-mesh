@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "EgressFilter",
+  "type": "record",
+  "fields": [
+    {
+      "name": "type",
+      "type": "string"
+    }
+  ]
+}

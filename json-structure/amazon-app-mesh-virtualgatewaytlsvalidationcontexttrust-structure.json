@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualGatewayTlsValidationContextTrust",
+  "type": "record",
+  "fields": [
+    {
+      "name": "acm",
+      "type": "string"
+    },
+    {
+      "name": "file",
+      "type": "string"
+    },
+    {
+      "name": "sds",
+      "type": "string"
+    }
+  ]
+}

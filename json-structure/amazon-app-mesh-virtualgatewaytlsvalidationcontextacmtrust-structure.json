@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "VirtualGatewayTlsValidationContextAcmTrust",
+  "type": "record",
+  "fields": [
+    {
+      "name": "certificateAuthorityArns",
+      "type": "string"
+    }
+  ]
+}

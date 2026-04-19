@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "RouteData",
+  "type": "record",
+  "fields": [
+    {
+      "name": "meshName",
+      "type": "string"
+    },
+    {
+      "name": "metadata",
+      "type": "string"
+    },
+    {
+      "name": "routeName",
+      "type": "string"
+    },
+    {
+      "name": "spec",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "virtualRouterName",
+      "type": "string"
+    }
+  ]
+}

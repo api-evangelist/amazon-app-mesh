@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GatewayRouteData",
+  "description": "An object that represents a gateway route returned by a describe operation.",
+  "type": "object",
+  "properties": {
+    "gatewayRouteName": {},
+    "meshName": {},
+    "metadata": {
+      "$ref": "#/definitions/ResourceMetadata"
+    },
+    "spec": {},
+    "status": {},
+    "virtualGatewayName": {}
+  },
+  "required": [
+    "gatewayRouteName",
+    "meshName",
+    "metadata",
+    "spec",
+    "status",
+    "virtualGatewayName"
+  ]
+}

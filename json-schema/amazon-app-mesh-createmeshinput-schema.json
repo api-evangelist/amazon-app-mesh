@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CreateMeshInput",
+  "description": "<zonbook></zonbook><xhtml></xhtml>",
+  "type": "object",
+  "properties": {
+    "clientToken": {},
+    "meshName": {},
+    "spec": {},
+    "tags": {}
+  },
+  "required": [
+    "meshName"
+  ]
+}

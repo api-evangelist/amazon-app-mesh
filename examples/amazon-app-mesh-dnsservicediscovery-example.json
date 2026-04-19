@@ -1,0 +1,5 @@
+{
+  "hostname": "example-hostname",
+  "ipPreference": "example-ipPreference",
+  "responseType": "example-responseType"
+}

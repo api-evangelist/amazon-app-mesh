@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "ListTagsForResourceOutput",
+  "type": "record",
+  "fields": [
+    {
+      "name": "nextToken",
+      "type": "string"
+    },
+    {
+      "name": "tags",
+      "type": "string"
+    }
+  ]
+}

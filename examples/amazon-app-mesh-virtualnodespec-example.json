@@ -1,0 +1,7 @@
+{
+  "backendDefaults": "example-backendDefaults",
+  "backends": "example-backends",
+  "listeners": "example-listeners",
+  "logging": "example-logging",
+  "serviceDiscovery": "example-serviceDiscovery"
+}

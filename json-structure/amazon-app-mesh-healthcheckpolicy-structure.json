@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-structure.org/meta/extended/v0/#",
+  "name": "HealthCheckPolicy",
+  "type": "record",
+  "fields": [
+    {
+      "name": "healthyThreshold",
+      "type": "string"
+    },
+    {
+      "name": "intervalMillis",
+      "type": "string"
+    },
+    {
+      "name": "path",
+      "type": "string"
+    },
+    {
+      "name": "port",
+      "type": "string"
+    },
+    {
+      "name": "protocol",
+      "type": "string"
+    },
+    {
+      "name": "timeoutMillis",
+      "type": "string"
+    },
+    {
+      "name": "unhealthyThreshold",
+      "type": "string"
+    }
+  ]
+}
