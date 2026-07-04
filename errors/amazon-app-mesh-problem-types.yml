@@ -1,0 +1,63 @@
+generated: '2026-06-20'
+method: derived
+source: openapi/amazon-app-mesh-openapi.yaml
+format: aws-json
+description: >-
+  Error catalog for the AWS App Mesh API. App Mesh does not use RFC 9457
+  problem+json; errors are returned as AWS JSON exception shapes with an
+  __type field, and the HTTP status is the standard AWS mapping (4xx/5xx). The
+  numeric codes below (480-487) are the synthetic per-exception codes emitted by
+  the OpenAPI conversion; the mapped_status column is the real AWS HTTP status.
+  Titles and remediation are enriched from the AWS App Mesh API Reference
+  (Common Errors).
+problems:
+- name: BadRequestException
+  spec_code: 481
+  mapped_status: 400
+  title: The request is malformed or contains an error such as an invalid parameter value.
+  remediation: Correct the request payload or parameter values and retry.
+- name: NotFoundException
+  spec_code: 480
+  mapped_status: 404
+  title: The specified resource does not exist.
+  remediation: Verify the mesh, virtual node/router/service/gateway name or ARN exists in the account and region.
+- name: ConflictException
+  spec_code: 482
+  mapped_status: 409
+  title: The request contains a client token that was used for a previous, successful request that differs, or the resource is in a conflicting state.
+  remediation: Retry with a unique client token or resolve the conflicting resource state.
+- name: ForbiddenException
+  spec_code: 483
+  mapped_status: 403
+  title: You do not have permissions to perform this action.
+  remediation: Attach the required IAM permissions (appmesh:*) to the calling principal.
+- name: ResourceInUseException
+  spec_code: 484
+  mapped_status: 409
+  title: You cannot delete the specified resource because it is in use or required by another resource.
+  remediation: Delete or detach dependent resources (routes, virtual nodes) before deleting the parent.
+- name: ServiceUnavailableException
+  spec_code: 484
+  mapped_status: 503
+  title: The request has failed due to a temporary failure of the service.
+  remediation: Retry the request using exponential backoff.
+- name: TooManyRequestsException
+  spec_code: 482
+  mapped_status: 429
+  title: The maximum request rate permitted by the App Mesh APIs has been exceeded.
+  remediation: Reduce request rate and retry with exponential backoff.
+- name: TooManyTagsException
+  spec_code: 482
+  mapped_status: 400
+  title: The request exceeds the maximum allowed number of tags allowed per resource.
+  remediation: Remove tags so the resource stays within the 50-tag limit.
+- name: InternalServerErrorException
+  spec_code: 485
+  mapped_status: 500
+  title: The request processing has failed because of an unknown error, exception, or failure.
+  remediation: Retry the request; if it persists, contact AWS Support.
+- name: LimitExceededException
+  spec_code: 487
+  mapped_status: 400
+  title: You have exceeded a service limit (quota) for your account.
+  remediation: Request a service quota increase or reduce the number of resources.

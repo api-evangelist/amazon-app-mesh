@@ -1,0 +1,192 @@
+# AWS App Mesh API Reference
+
+> AWS App Mesh is a service mesh based on the Envoy proxy that makes it easy to monitor and control microservices. App Mesh standardizes how your microservices communicate, giving you end-to-end visibility and helping to ensure high availability for your applications.
+
+- [Welcome](https://docs.aws.amazon.com/app-mesh/latest/APIReference/Welcome.md)
+
+## [Actions](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Operations.md)
+
+- [CreateGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateGatewayRoute.md): Creates a gateway route.
+- [CreateMesh](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateMesh.md): Creates a service mesh.
+- [CreateRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateRoute.md): Creates a route that is associated with a virtual router.
+- [CreateVirtualGateway](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateVirtualGateway.md): Creates a virtual gateway.
+- [CreateVirtualNode](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateVirtualNode.md): Creates a virtual node within a service mesh.
+- [CreateVirtualRouter](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateVirtualRouter.md): Creates a virtual router within a service mesh.
+- [CreateVirtualService](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateVirtualService.md): Creates a virtual service within a service mesh.
+- [DeleteGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteGatewayRoute.md): Deletes an existing gateway route.
+- [DeleteMesh](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteMesh.md): Deletes an existing service mesh.
+- [DeleteRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteRoute.md): Deletes an existing route.
+- [DeleteVirtualGateway](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteVirtualGateway.md): Deletes an existing virtual gateway.
+- [DeleteVirtualNode](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteVirtualNode.md): Deletes an existing virtual node.
+- [DeleteVirtualRouter](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteVirtualRouter.md): Deletes an existing virtual router.
+- [DeleteVirtualService](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteVirtualService.md): Deletes an existing virtual service.
+- [DescribeGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeGatewayRoute.md): Describes an existing gateway route.
+- [DescribeMesh](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeMesh.md): Describes an existing service mesh.
+- [DescribeRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeRoute.md): Describes an existing route.
+- [DescribeVirtualGateway](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualGateway.md): Describes an existing virtual gateway.
+- [DescribeVirtualNode](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualNode.md): Describes an existing virtual node.
+- [DescribeVirtualRouter](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualRouter.md): Describes an existing virtual router.
+- [DescribeVirtualService](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualService.md): Describes an existing virtual service.
+- [ListGatewayRoutes](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListGatewayRoutes.md): Returns a list of existing gateway routes that are associated to a virtual gateway.
+- [ListMeshes](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListMeshes.md): Returns a list of existing service meshes.
+- [ListRoutes](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListRoutes.md): Returns a list of existing routes in a service mesh.
+- [ListTagsForResource](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListTagsForResource.md): List the tags for an App Mesh resource.
+- [ListVirtualGateways](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualGateways.md): Returns a list of existing virtual gateways in a service mesh.
+- [ListVirtualNodes](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualNodes.md): Returns a list of existing virtual nodes.
+- [ListVirtualRouters](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualRouters.md): Returns a list of existing virtual routers in a service mesh.
+- [ListVirtualServices](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualServices.md): Returns a list of existing virtual services in a service mesh.
+- [TagResource](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TagResource.md): Associates the specified tags to a resource with the specified resourceArn.
+- [UntagResource](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UntagResource.md): Deletes specified tags from a resource.
+- [UpdateGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateGatewayRoute.md): Updates an existing gateway route that is associated to a specified virtual gateway in a service mesh.
+- [UpdateMesh](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateMesh.md): Updates an existing service mesh.
+- [UpdateRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateRoute.md): Updates an existing route for a specified service mesh and virtual router.
+- [UpdateVirtualGateway](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateVirtualGateway.md): Updates an existing virtual gateway in a specified service mesh.
+- [UpdateVirtualNode](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateVirtualNode.md): Updates an existing virtual node in a specified service mesh.
+- [UpdateVirtualRouter](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateVirtualRouter.md): Updates an existing virtual router in a specified service mesh.
+- [UpdateVirtualService](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateVirtualService.md): Updates an existing virtual service in a specified service mesh.
+
+
+## [Data Types](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Types.md)
+
+- [AccessLog](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_AccessLog.md): An object that represents the access logging information for a virtual node.
+- [AwsCloudMapInstanceAttribute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_AwsCloudMapInstanceAttribute.md): An object that represents the AWS Cloud Map attribute information for your virtual node.
+- [AwsCloudMapServiceDiscovery](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_AwsCloudMapServiceDiscovery.md): An object that represents the AWS Cloud Map service discovery information for your virtual node.
+- [Backend](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Backend.md): An object that represents the backends that a virtual node is expected to send outbound traffic to.
+- [BackendDefaults](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_BackendDefaults.md): An object that represents the default properties for a backend.
+- [ClientPolicy](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ClientPolicy.md): An object that represents a client policy.
+- [ClientPolicyTls](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ClientPolicyTls.md): A reference to an object that represents a Transport Layer Security (TLS) client policy.
+- [ClientTlsCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ClientTlsCertificate.md): An object that represents the client's certificate.
+- [DnsServiceDiscovery](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DnsServiceDiscovery.md): An object that represents the DNS service discovery information for your virtual node.
+- [Duration](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Duration.md): An object that represents a duration of time.
+- [EgressFilter](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_EgressFilter.md): An object that represents the egress filter rules for a service mesh.
+- [FileAccessLog](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_FileAccessLog.md): An object that represents an access log file.
+- [GatewayRouteData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteData.md): An object that represents a gateway route returned by a describe operation.
+- [GatewayRouteHostnameMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteHostnameMatch.md): An object representing the gateway route host name to match.
+- [GatewayRouteHostnameRewrite](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteHostnameRewrite.md): An object representing the gateway route host name to rewrite.
+- [GatewayRouteRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteRef.md): An object that represents a gateway route returned by a list operation.
+- [GatewayRouteSpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteSpec.md): An object that represents a gateway route specification.
+- [GatewayRouteStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteStatus.md): An object that represents the current status of a gateway route.
+- [GatewayRouteTarget](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteTarget.md): An object that represents a gateway route target.
+- [GatewayRouteVirtualService](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GatewayRouteVirtualService.md): An object that represents the virtual service that traffic is routed to.
+- [GrpcGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGatewayRoute.md): An object that represents a gRPC gateway route.
+- [GrpcGatewayRouteAction](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGatewayRouteAction.md): An object that represents the action to take if a match is determined.
+- [GrpcGatewayRouteMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGatewayRouteMatch.md): An object that represents the criteria for determining a request match.
+- [GrpcGatewayRouteMetadata](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGatewayRouteMetadata.md): An object representing the metadata of the gateway route.
+- [GrpcGatewayRouteRewrite](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGatewayRouteRewrite.md): An object that represents the gateway route to rewrite.
+- [GrpcMetadataMatchMethod](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcMetadataMatchMethod.md): An object representing the method header to be matched.
+- [GrpcRetryPolicy](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRetryPolicy.md): An object that represents a retry policy.
+- [GrpcRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRoute.md): An object that represents a gRPC route type.
+- [GrpcRouteAction](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRouteAction.md): An object that represents the action to take if a match is determined.
+- [GrpcRouteMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRouteMatch.md): An object that represents the criteria for determining a request match.
+- [GrpcRouteMetadata](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRouteMetadata.md): An object that represents the match metadata for the route.
+- [GrpcRouteMetadataMatchMethod](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRouteMetadataMatchMethod.md): An object that represents the match method.
+- [GrpcTimeout](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcTimeout.md): An object that represents types of timeouts.
+- [HeaderMatchMethod](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HeaderMatchMethod.md): An object that represents the method and value to match with the header value sent in a request.
+- [HealthCheckPolicy](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HealthCheckPolicy.md): An object that represents the health check policy for a virtual node's listener.
+- [HttpGatewayRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRoute.md): An object that represents an HTTP gateway route.
+- [HttpGatewayRouteAction](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRouteAction.md): An object that represents the action to take if a match is determined.
+- [HttpGatewayRouteHeader](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRouteHeader.md): An object that represents the HTTP header in the gateway route.
+- [HttpGatewayRouteMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRouteMatch.md): An object that represents the criteria for determining a request match.
+- [HttpGatewayRoutePathRewrite](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRoutePathRewrite.md): An object that represents the path to rewrite.
+- [HttpGatewayRoutePrefixRewrite](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRoutePrefixRewrite.md): An object representing the beginning characters of the route to rewrite.
+- [HttpGatewayRouteRewrite](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGatewayRouteRewrite.md): An object representing the gateway route to rewrite.
+- [HttpPathMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpPathMatch.md): An object representing the path to match in the request.
+- [HttpQueryParameter](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpQueryParameter.md): An object that represents the query parameter in the request.
+- [HttpRetryPolicy](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRetryPolicy.md): An object that represents a retry policy.
+- [HttpRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRoute.md): An object that represents an HTTP or HTTP/2 route type.
+- [HttpRouteAction](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRouteAction.md): An object that represents the action to take if a match is determined.
+- [HttpRouteHeader](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRouteHeader.md): An object that represents the HTTP header in the request.
+- [HttpRouteMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRouteMatch.md): An object that represents the requirements for a route to match HTTP requests for a virtual router.
+- [HttpTimeout](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpTimeout.md): An object that represents types of timeouts.
+- [JsonFormatRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_JsonFormatRef.md): An object that represents the key value pairs for the JSON.
+- [Listener](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Listener.md): An object that represents a listener for a virtual node.
+- [ListenerTimeout](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTimeout.md): An object that represents timeouts for different protocols.
+- [ListenerTls](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTls.md): An object that represents the Transport Layer Security (TLS) properties for a listener.
+- [ListenerTlsAcmCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTlsAcmCertificate.md): An object that represents an AWS Certificate Manager certificate.
+- [ListenerTlsCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTlsCertificate.md): An object that represents a listener's Transport Layer Security (TLS) certificate.
+- [ListenerTlsFileCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTlsFileCertificate.md): An object that represents a local file certificate.
+- [ListenerTlsSdsCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTlsSdsCertificate.md): An object that represents the listener's Secret Discovery Service certificate.
+- [ListenerTlsValidationContext](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTlsValidationContext.md): An object that represents a listener's Transport Layer Security (TLS) validation context.
+- [ListenerTlsValidationContextTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListenerTlsValidationContextTrust.md): An object that represents a listener's Transport Layer Security (TLS) validation context trust.
+- [Logging](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Logging.md): An object that represents the logging information for a virtual node.
+- [LoggingFormat](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_LoggingFormat.md): An object that represents the format for the logs.
+- [MatchRange](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MatchRange.md): An object that represents the range of values to match on.
+- [MeshData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshData.md): An object that represents a service mesh returned by a describe operation.
+- [MeshRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshRef.md): An object that represents a service mesh returned by a list operation.
+- [MeshServiceDiscovery](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshServiceDiscovery.md): An object that represents the service discovery information for a service mesh.
+- [MeshSpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshSpec.md): An object that represents the specification of a service mesh.
+- [MeshStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshStatus.md): An object that represents the status of a service mesh.
+- [OutlierDetection](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_OutlierDetection.md): An object that represents the outlier detection for a virtual node's listener.
+- [PortMapping](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_PortMapping.md): An object that represents a port mapping.
+- [QueryParameterMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_QueryParameterMatch.md): An object representing the query parameter to match.
+- [ResourceMetadata](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ResourceMetadata.md): An object that represents metadata for a resource.
+- [RouteData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteData.md): An object that represents a route returned by a describe operation.
+- [RouteRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteRef.md): An object that represents a route returned by a list operation.
+- [RouteSpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteSpec.md): An object that represents a route specification.
+- [RouteStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteStatus.md): An object that represents the current status of a route.
+- [ServiceDiscovery](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ServiceDiscovery.md): An object that represents the service discovery information for a virtual node.
+- [SubjectAlternativeNameMatchers](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_SubjectAlternativeNameMatchers.md): An object that represents the methods by which a subject alternative name on a peer Transport Layer Security (TLS) certificate can be matched.
+- [SubjectAlternativeNames](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_SubjectAlternativeNames.md): An object that represents the subject alternative names secured by the certificate.
+- [TagRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TagRef.md): Optional metadata that you apply to a resource to assist with categorization and organization.
+- [TcpRoute](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpRoute.md): An object that represents a TCP route type.
+- [TcpRouteAction](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpRouteAction.md): An object that represents the action to take if a match is determined.
+- [TcpRouteMatch](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpRouteMatch.md): An object representing the TCP route to match.
+- [TcpTimeout](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpTimeout.md): An object that represents types of timeouts.
+- [TlsValidationContext](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsValidationContext.md): An object that represents how the proxy will validate its peer during Transport Layer Security (TLS) negotiation.
+- [TlsValidationContextAcmTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsValidationContextAcmTrust.md): An object that represents a Transport Layer Security (TLS) validation context trust for an AWS Certificate Manager certificate.
+- [TlsValidationContextFileTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsValidationContextFileTrust.md): An object that represents a Transport Layer Security (TLS) validation context trust for a local file.
+- [TlsValidationContextSdsTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsValidationContextSdsTrust.md): An object that represents a Transport Layer Security (TLS) Secret Discovery Service validation context trust.
+- [TlsValidationContextTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsValidationContextTrust.md): An object that represents a Transport Layer Security (TLS) validation context trust.
+- [VirtualGatewayAccessLog](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayAccessLog.md): The access log configuration for a virtual gateway.
+- [VirtualGatewayBackendDefaults](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayBackendDefaults.md): An object that represents the default properties for a backend.
+- [VirtualGatewayClientPolicy](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayClientPolicy.md): An object that represents a client policy.
+- [VirtualGatewayClientPolicyTls](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayClientPolicyTls.md): An object that represents a Transport Layer Security (TLS) client policy.
+- [VirtualGatewayClientTlsCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayClientTlsCertificate.md): An object that represents the virtual gateway's client's Transport Layer Security (TLS) certificate.
+- [VirtualGatewayConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayConnectionPool.md): An object that represents the type of virtual gateway connection pool.
+- [VirtualGatewayData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayData.md): An object that represents a virtual gateway returned by a describe operation.
+- [VirtualGatewayFileAccessLog](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayFileAccessLog.md): An object that represents an access log file.
+- [VirtualGatewayGrpcConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayGrpcConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualGatewayHealthCheckPolicy](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayHealthCheckPolicy.md): An object that represents the health check policy for a virtual gateway's listener.
+- [VirtualGatewayHttp2ConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayHttp2ConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualGatewayHttpConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayHttpConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualGatewayListener](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListener.md): An object that represents a listener for a virtual gateway.
+- [VirtualGatewayListenerTls](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTls.md): An object that represents the Transport Layer Security (TLS) properties for a listener.
+- [VirtualGatewayListenerTlsAcmCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTlsAcmCertificate.md): An object that represents an AWS Certificate Manager certificate.
+- [VirtualGatewayListenerTlsCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTlsCertificate.md): An object that represents a listener's Transport Layer Security (TLS) certificate.
+- [VirtualGatewayListenerTlsFileCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTlsFileCertificate.md): An object that represents a local file certificate.
+- [VirtualGatewayListenerTlsSdsCertificate](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTlsSdsCertificate.md): An object that represents the virtual gateway's listener's Secret Discovery Service certificate.The proxy must be configured with a local SDS provider via a Unix Domain Socket.
+- [VirtualGatewayListenerTlsValidationContext](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTlsValidationContext.md): An object that represents a virtual gateway's listener's Transport Layer Security (TLS) validation context.
+- [VirtualGatewayListenerTlsValidationContextTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayListenerTlsValidationContextTrust.md): An object that represents a virtual gateway's listener's Transport Layer Security (TLS) validation context trust.
+- [VirtualGatewayLogging](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayLogging.md): An object that represents logging information.
+- [VirtualGatewayPortMapping](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayPortMapping.md): An object that represents a port mapping.
+- [VirtualGatewayRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayRef.md): An object that represents a virtual gateway returned by a list operation.
+- [VirtualGatewaySpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewaySpec.md): An object that represents the specification of a service mesh resource.
+- [VirtualGatewayStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayStatus.md): An object that represents the status of the mesh resource.
+- [VirtualGatewayTlsValidationContext](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayTlsValidationContext.md): An object that represents a Transport Layer Security (TLS) validation context.
+- [VirtualGatewayTlsValidationContextAcmTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayTlsValidationContextAcmTrust.md): An object that represents a Transport Layer Security (TLS) validation context trust for an AWS Certificate Manager certificate.
+- [VirtualGatewayTlsValidationContextFileTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayTlsValidationContextFileTrust.md): An object that represents a Transport Layer Security (TLS) validation context trust for a local file.
+- [VirtualGatewayTlsValidationContextSdsTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayTlsValidationContextSdsTrust.md): An object that represents a virtual gateway's listener's Transport Layer Security (TLS) Secret Discovery Service validation context trust.
+- [VirtualGatewayTlsValidationContextTrust](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualGatewayTlsValidationContextTrust.md): An object that represents a Transport Layer Security (TLS) validation context trust.
+- [VirtualNodeConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeConnectionPool.md): An object that represents the type of virtual node connection pool.
+- [VirtualNodeData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeData.md): An object that represents a virtual node returned by a describe operation.
+- [VirtualNodeGrpcConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeGrpcConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualNodeHttp2ConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeHttp2ConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualNodeHttpConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeHttpConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualNodeRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeRef.md): An object that represents a virtual node returned by a list operation.
+- [VirtualNodeServiceProvider](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeServiceProvider.md): An object that represents a virtual node service provider.
+- [VirtualNodeSpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeSpec.md): An object that represents the specification of a virtual node.
+- [VirtualNodeStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeStatus.md): An object that represents the current status of the virtual node.
+- [VirtualNodeTcpConnectionPool](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualNodeTcpConnectionPool.md): An object that represents a type of connection pool.
+- [VirtualRouterData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualRouterData.md): An object that represents a virtual router returned by a describe operation.
+- [VirtualRouterListener](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualRouterListener.md): An object that represents a virtual router listener.
+- [VirtualRouterRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualRouterRef.md): An object that represents a virtual router returned by a list operation.
+- [VirtualRouterServiceProvider](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualRouterServiceProvider.md): An object that represents a virtual node service provider.
+- [VirtualRouterSpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualRouterSpec.md): An object that represents the specification of a virtual router.
+- [VirtualRouterStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualRouterStatus.md): An object that represents the status of a virtual router.
+- [VirtualServiceBackend](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualServiceBackend.md): An object that represents a virtual service backend for a virtual node.
+- [VirtualServiceData](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualServiceData.md): An object that represents a virtual service returned by a describe operation.
+- [VirtualServiceProvider](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualServiceProvider.md): An object that represents the provider for a virtual service.
+- [VirtualServiceRef](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualServiceRef.md): An object that represents a virtual service returned by a list operation.
+- [VirtualServiceSpec](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualServiceSpec.md): An object that represents the specification of a virtual service.
+- [VirtualServiceStatus](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_VirtualServiceStatus.md): An object that represents the status of a virtual service.
+- [WeightedTarget](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_WeightedTarget.md): An object that represents a target and its relative weight.

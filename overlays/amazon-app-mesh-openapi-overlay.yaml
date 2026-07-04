@@ -1,0 +1,29 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for AWS App Mesh
+  version: 1.0.0
+extends: openapi/amazon-app-mesh-openapi.yaml
+actions:
+- target: $.info
+  update:
+    x-apievangelist-slug: amazon-app-mesh
+    x-apievangelist-provider: Amazon Web Services
+    x-apievangelist-tags:
+    - AWS
+    - Microservices
+    - Networking
+    - Service Mesh
+    x-lifecycle-end-of-support: '2026-09-30'
+    x-lifecycle-migration: Amazon ECS Service Connect
+    x-lifecycle-notice: >-
+      AWS will discontinue support for AWS App Mesh on September 30, 2026. New
+      integrations should target Amazon ECS Service Connect.
+- target: $.info
+  update:
+    x-authentication: AWS Signature Version 4 (SigV4)
+    x-error-format: aws-json
+    x-pagination: cursor (limit + nextToken)
+- target: $.externalDocs
+  update:
+    description: AWS App Mesh API Reference
+    url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/Welcome.html

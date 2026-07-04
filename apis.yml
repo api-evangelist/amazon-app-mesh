@@ -10,7 +10,7 @@ description: >-
   make it easy for your services to communicate with each other across multiple
   types of compute infrastructure.
 created: '2024-01-15'
-modified: '2026-04-19'
+modified: '2026-06-20'
 apis:
 - name: AWS App Mesh API
   description: >-
@@ -56,6 +56,18 @@ apis:
     url: json-structure/amazon-app-mesh-arn-structure.json
   - type: JSONLD
     url: json-ld/amazon-app-mesh-context.jsonld
+  - type: Overlay
+    url: overlays/amazon-app-mesh-openapi-overlay.yaml
+  - type: ErrorCatalog
+    url: errors/amazon-app-mesh-problem-types.yml
+  - type: Conformance
+    url: conformance/amazon-app-mesh-conformance.yml
+  - type: MCPServer
+    url: mcp/amazon-app-mesh-mcp.yml
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-llms.txt
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-userguide-llms.txt
 common:
 - type: Portal
   url: https://aws.amazon.com/
@@ -87,6 +99,14 @@ common:
   url: capabilities/app-mesh-management.yaml
 - type: Vocabulary
   url: vocabulary/amazon-app-mesh-vocabulary.yaml
+- type: Packages
+  url: packages/amazon-app-mesh-packages.yml
+- type: WellKnown
+  url: well-known/amazon-app-mesh-well-known.yml
+- type: SecurityTxt
+  url: well-known/amazon-app-mesh-security.txt
+- type: Lifecycle
+  url: lifecycle/amazon-app-mesh-lifecycle.yml
 - type: Features
   data:
   - name: Service Mesh Management

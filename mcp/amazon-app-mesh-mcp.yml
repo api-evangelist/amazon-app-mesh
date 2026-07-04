@@ -1,0 +1,137 @@
+generated: '2026-06-20'
+method: derived
+status: candidate
+source: openapi/amazon-app-mesh-openapi.yaml
+note: No official hosted/remote MCP server was found for AWS App Mesh. This is a candidate tool list derived
+  one-to-one from the OpenAPI operations; it is not a published server.
+server:
+  name: amazon-app-mesh
+  transport: stdio
+tools:
+- name: create_gateway_route
+  description: <p>Creates a gateway route.</p> <p>A gateway route is attached to a virtual gateway and
+    routes traffic to an existing vi
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateGatewayRoute
+- name: list_gateway_routes
+  description: Returns a list of existing gateway routes that are associated to a virtual gateway.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListGatewayRoutes
+- name: create_mesh
+  description: <p>Creates a service mesh.</p> <p> A service mesh is a logical boundary for network traffic
+    between services that are re
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateMesh
+- name: list_meshes
+  description: Returns a list of existing service meshes.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListMeshes
+- name: create_route
+  description: <p>Creates a route that is associated with a virtual router.</p> <p> You can route several
+    different protocols and defin
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateRoute
+- name: list_routes
+  description: Returns a list of existing routes in a service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListRoutes
+- name: create_virtual_gateway
+  description: <p>Creates a virtual gateway.</p> <p>A virtual gateway allows resources outside your mesh
+    to communicate to resources th
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateVirtualGateway
+- name: list_virtual_gateways
+  description: Returns a list of existing virtual gateways in a service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListVirtualGateways
+- name: create_virtual_node
+  description: <p>Creates a virtual node within a service mesh.</p> <p> A virtual node acts as a logical
+    pointer to a particular task g
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateVirtualNode
+- name: list_virtual_nodes
+  description: Returns a list of existing virtual nodes.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListVirtualNodes
+- name: create_virtual_router
+  description: <p>Creates a virtual router within a service mesh.</p> <p>Specify a <code>listener</code>
+    for any inbound traffic that y
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateVirtualRouter
+- name: list_virtual_routers
+  description: Returns a list of existing virtual routers in a service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListVirtualRouters
+- name: create_virtual_service
+  description: <p>Creates a virtual service within a service mesh.</p> <p>A virtual service is an abstraction
+    of a real service that is
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#CreateVirtualService
+- name: list_virtual_services
+  description: Returns a list of existing virtual services in a service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListVirtualServices
+- name: delete_gateway_route
+  description: Deletes an existing gateway route.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteGatewayRoute
+- name: describe_gateway_route
+  description: Describes an existing gateway route.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeGatewayRoute
+- name: update_gateway_route
+  description: Updates an existing gateway route that is associated to a specified virtual gateway in
+    a service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateGatewayRoute
+- name: delete_mesh
+  description: <p>Deletes an existing service mesh.</p> <p>You must delete all resources (virtual services,
+    routes, virtual routers, an
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteMesh
+- name: describe_mesh
+  description: Describes an existing service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeMesh
+- name: update_mesh
+  description: Updates an existing service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateMesh
+- name: delete_route
+  description: Deletes an existing route.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteRoute
+- name: describe_route
+  description: Describes an existing route.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeRoute
+- name: update_route
+  description: Updates an existing route for a specified service mesh and virtual router.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateRoute
+- name: delete_virtual_gateway
+  description: Deletes an existing virtual gateway. You cannot delete a virtual gateway if any gateway
+    routes are associated to it.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteVirtualGateway
+- name: describe_virtual_gateway
+  description: Describes an existing virtual gateway.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeVirtualGateway
+- name: update_virtual_gateway
+  description: Updates an existing virtual gateway in a specified service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateVirtualGateway
+- name: delete_virtual_node
+  description: <p>Deletes an existing virtual node.</p> <p>You must delete any virtual services that list
+    a virtual node as a service p
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteVirtualNode
+- name: describe_virtual_node
+  description: Describes an existing virtual node.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeVirtualNode
+- name: update_virtual_node
+  description: Updates an existing virtual node in a specified service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateVirtualNode
+- name: delete_virtual_router
+  description: <p>Deletes an existing virtual router.</p> <p>You must delete any routes associated with
+    the virtual router before you c
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteVirtualRouter
+- name: describe_virtual_router
+  description: Describes an existing virtual router.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeVirtualRouter
+- name: update_virtual_router
+  description: Updates an existing virtual router in a specified service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateVirtualRouter
+- name: delete_virtual_service
+  description: Deletes an existing virtual service.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DeleteVirtualService
+- name: describe_virtual_service
+  description: Describes an existing virtual service.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#DescribeVirtualService
+- name: update_virtual_service
+  description: Updates an existing virtual service in a specified service mesh.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UpdateVirtualService
+- name: list_tags_for_resource
+  description: List the tags for an App Mesh resource.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#ListTagsForResource
+- name: tag_resource
+  description: 'Associates the specified tags to a resource with the specified <code>resourceArn</code>.
+    If existing tags on a resource '
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#TagResource
+- name: untag_resource
+  description: Deletes specified tags from a resource.
+  source_operation: openapi/amazon-app-mesh-openapi.yaml#UntagResource

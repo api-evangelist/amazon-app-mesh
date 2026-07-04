@@ -1,0 +1,33 @@
+generated: '2026-06-20'
+method: searched
+source: https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html
+description: >-
+  Lifecycle, versioning, and end-of-support status for the AWS App Mesh API.
+  AWS has announced that App Mesh will be discontinued; the entire service is
+  end-of-life, so the whole API surface should be treated as deprecated.
+end_of_life:
+  announced: true
+  sunset_date: '2026-09-30'
+  notice: >-
+    On September 30, 2026, AWS will discontinue support for AWS App Mesh. After
+    that date the App Mesh console and App Mesh resources will no longer be
+    accessible.
+  migration_path: Amazon ECS Service Connect
+  migration_url: https://aws.amazon.com/blogs/containers/migrating-from-aws-app-mesh-to-amazon-ecs-service-connect
+  source: https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html
+versioning:
+  scheme: uri-path
+  current: v20190125
+  api_version: '2019-01-25'
+  docs: https://docs.aws.amazon.com/app-mesh/latest/APIReference/Welcome.html
+deprecation:
+  policy_url: https://docs.aws.amazon.com/app-mesh/latest/userguide/doc-history.html
+  sunset_header: false
+  deprecation_header: false
+sla:
+  url: https://aws.amazon.com/legal/service-level-agreements/
+  uptime_target: null
+  notes: App Mesh is not covered by a standalone published SLA.
+status_page: https://health.aws.amazon.com/health/status
+service_quotas: https://docs.aws.amazon.com/app-mesh/latest/userguide/service-quotas.html
+deprecated_operations: []

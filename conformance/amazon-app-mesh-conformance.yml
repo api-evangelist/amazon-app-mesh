@@ -1,0 +1,42 @@
+generated: '2026-06-20'
+method: derived
+source: openapi/amazon-app-mesh-openapi.yaml
+description: >-
+  Cross-cutting standards conformance for the AWS App Mesh API, derived from the
+  OpenAPI definition (security schemes, response media types, list-operation
+  parameters). App Mesh is a REST/JSON AWS control-plane API authenticated with
+  Signature Version 4; it does not implement OAuth/OIDC or RFC 9457 problem
+  details.
+standards:
+- id: aws-sigv4
+  conforms: true
+  evidence: securitySchemes.hmac has x-amazon-apigateway-authtype awsSigv4 (Authorization header)
+- id: oauth2
+  conforms: false
+  evidence: no oauth2 security scheme; authentication is AWS SigV4
+- id: oidc
+  conforms: false
+- id: rest-json
+  conforms: true
+  evidence: resource-oriented paths with JSON request/response bodies over HTTPS
+- id: pagination
+  conforms: true
+  evidence: List* operations use cursor pagination via limit + nextToken query parameters
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: error responses use application/json AWS exception shapes, not application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no Idempotency-Key header or idempotency token parameters defined
+- id: json-api
+  conforms: false
+- id: odata
+  conforms: false
+- id: fhir-r4
+  conforms: false
+- id: scim2
+  conforms: false
+- id: fapi
+  conforms: false
+- id: psd2
+  conforms: false

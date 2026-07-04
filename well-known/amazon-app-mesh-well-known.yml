@@ -1,0 +1,29 @@
+generated: '2026-06-20'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for AWS App Mesh. The
+  regional API host (appmesh.us-east-1.amazonaws.com) is a SigV4 data-plane
+  endpoint and serves no discovery documents. The only 200 came from the AWS
+  corporate host's RFC 9116 security.txt, saved verbatim.
+hosts:
+- host: https://appmesh.us-east-1.amazonaws.com
+  source: openapi servers[]
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://aws.amazon.com
+  source: apis.yml Portal / Website
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: amazon-app-mesh-security.txt
+  - path: /.well-known/ai-plugin.json
+    status: 404

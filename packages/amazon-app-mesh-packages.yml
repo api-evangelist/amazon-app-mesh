@@ -1,0 +1,59 @@
+generated: '2026-06-20'
+method: searched
+source: https://aws.amazon.com/tools/
+description: >-
+  First-party AWS SDK client libraries that provide AWS App Mesh support. Each
+  entry was confirmed to exist in its public package registry. AWS ships a
+  per-service client for App Mesh in most SDKs; Python and PHP expose App Mesh
+  through the monolithic boto3 / aws-sdk-php packages.
+packages:
+- language: javascript
+  registry: npm
+  name: '@aws-sdk/client-app-mesh'
+  url: https://www.npmjs.com/package/@aws-sdk/client-app-mesh
+  install: npm install @aws-sdk/client-app-mesh
+  official: true
+- language: python
+  registry: pypi
+  name: boto3
+  url: https://pypi.org/project/boto3/
+  install: pip install boto3
+  official: true
+  notes: App Mesh is accessed via boto3.client('appmesh'); no standalone PyPI package.
+- language: java
+  registry: maven
+  name: software.amazon.awssdk:appmesh
+  url: https://central.sonatype.com/artifact/software.amazon.awssdk/appmesh
+  install: 'implementation ''software.amazon.awssdk:appmesh:2.46.21'''
+  official: true
+- language: dotnet
+  registry: nuget
+  name: AWSSDK.AppMesh
+  url: https://www.nuget.org/packages/AWSSDK.AppMesh
+  install: dotnet add package AWSSDK.AppMesh
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: github.com/aws/aws-sdk-go-v2/service/appmesh
+  url: https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/appmesh
+  install: go get github.com/aws/aws-sdk-go-v2/service/appmesh
+  official: true
+- language: ruby
+  registry: rubygems
+  name: aws-sdk-appmesh
+  url: https://rubygems.org/gems/aws-sdk-appmesh
+  install: gem install aws-sdk-appmesh
+  official: true
+- language: rust
+  registry: crates
+  name: aws-sdk-appmesh
+  url: https://crates.io/crates/aws-sdk-appmesh
+  install: cargo add aws-sdk-appmesh
+  official: true
+- language: php
+  registry: packagist
+  name: aws/aws-sdk-php
+  url: https://packagist.org/packages/aws/aws-sdk-php
+  install: composer require aws/aws-sdk-php
+  official: true
+  notes: App Mesh is accessed via the AppMesh client in the monolithic aws-sdk-php package.
