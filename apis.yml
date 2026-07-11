@@ -69,6 +69,14 @@ apis:
   - type: LLMsTxt
     url: llms/amazon-app-mesh-userguide-llms.txt
 common:
+- type: TrustCenter
+  url: security/amazon-app-mesh-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-app-mesh-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-app-mesh-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-app-mesh-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/
 - type: Website
