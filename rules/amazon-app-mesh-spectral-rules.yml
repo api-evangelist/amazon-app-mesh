@@ -1,6 +1,22 @@
+# amazon-app-mesh — Spectral ruleset (strengthened)
+# Plain Spectral. Existing hand-authored rules preserved; measured rules added
+# from this provider's own OpenAPI conventions by strengthen_ruleset.py,
+# then self-validated against the spec.
+#
+# Provenance:
+#   - servers-https-only: 50% of servers already https (warn)
+#   - path-params-casing: camel @ 100% (n=122)
+#   - query-params-casing: camel @ 84% (n=100)
+#   - operationid-casing: pascal @ 100% (n=76)
+#   - schema-names-casing: pascal @ 100% (n=666)
+#   - schema-properties-casing: snake @ 54% (n=952)
+#   - security: global (root) — NOT emitting operation-security-required
+#   - error-schema-defined: InternalServerErrorException
+#   - pagination params observed: ['limit', 'nextToken']
+#   - merge: kept 3 existing, added 9 measured, upgraded 0
+#   - added: servers-https-only, path-params-casing, query-params-casing, operationid-casing, schema-names-casing, schema-properties-casing, security-schemes-defined, error-schema-defined, no-empty-descriptions
 extends:
-- - spectral:oas
-  - all
+  - spectral:oas
 rules:
   amazon-app-mesh-info-title:
     description: API must have a title.
@@ -25,4 +41,75 @@ rules:
     given: $.paths[*][get,post,put,patch,delete]
     then:
       field: operationId
+      function: truthy
+  servers-https-only:
+    description: Server URLs must use HTTPS.
+    severity: warn
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: ^https://
+  path-params-casing:
+    description: Path parameters should be camelCase (the dominant convention in this API).
+    severity: warn
+    given: $.paths[*].parameters[?(@.in=='path')].name
+    then:
+      function: casing
+      functionOptions:
+        type: camel
+  query-params-casing:
+    description: Query parameters should be camelCase (the dominant convention in this API).
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].parameters[?(@.in=='query')]
+    then:
+      field: name
+      function: casing
+      functionOptions:
+        type: camel
+  operationid-casing:
+    description: Operation IDs should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].operationId
+    then:
+      function: casing
+      functionOptions:
+        type: pascal
+  schema-names-casing:
+    description: Component schema names should be PascalCase (the dominant convention in this API).
+    severity: warn
+    given: $.components.schemas
+    then:
+      field: '@key'
+      function: casing
+      functionOptions:
+        type: pascal
+  schema-properties-casing:
+    description: Schema properties should be snake_case (the dominant convention in this API).
+    severity: info
+    given: $.components.schemas[*].properties
+    then:
+      field: '@key'
+      function: casing
+      functionOptions:
+        type: snake
+  security-schemes-defined:
+    description: Security schemes should be defined in components.
+    severity: warn
+    given: $.components
+    then:
+      field: securitySchemes
+      function: truthy
+  error-schema-defined:
+    description: A shared error schema (InternalServerErrorException) should be defined for error payloads.
+    severity: warn
+    given: $.components.schemas
+    then:
+      field: InternalServerErrorException
+      function: truthy
+  no-empty-descriptions:
+    description: Descriptions must not be empty strings.
+    severity: warn
+    given: $..description
+    then:
       function: truthy
