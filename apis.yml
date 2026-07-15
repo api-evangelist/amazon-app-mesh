@@ -69,6 +69,8 @@ apis:
   - type: LLMsTxt
     url: llms/amazon-app-mesh-userguide-llms.txt
 common:
+- type: AgenticAccess
+  url: agentic-access/amazon-app-mesh-agentic-access.yml
 - type: TrustCenter
   url: security/amazon-app-mesh-trust-center.yml
 - type: VulnerabilityDisclosure
