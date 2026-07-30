@@ -3,7 +3,19 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-app-mesh/refs/heads/main/apis.yml
 name: Amazon App Mesh
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-app-mesh.png
 specificationVersion: '0.19'
 description: >-
   AWS App Mesh is a service mesh that provides application-level networking to
@@ -12,26 +24,18 @@ description: >-
 created: '2024-01-15'
 modified: '2026-06-20'
 apis:
-- name: AWS App Mesh API
-  description: >-
-    The AWS App Mesh API provides programmatic access to configure and manage
-    service mesh resources for microservices. It enables developers to create
-    and manage meshes, virtual services, virtual nodes, virtual routers, and
-    routes, providing fine-grained control over service-to-service communication,
-    traffic routing, and observability.
-  image: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
+- aid: amazon-app-mesh:amazon-app-mesh-meshes-api
+  name: Amazon App Mesh Meshes API
+  description: The Meshes API from Amazon App Mesh — 14 operation(s) for meshes.
   humanURL: https://aws.amazon.com/app-mesh/
   baseURL: https://appmesh.amazonaws.com
   tags:
-  - AWS
-  - Microservices
-  - Networking
-  - Service Mesh
+  - Meshes
   properties:
+  - type: OpenAPI
+    url: openapi/amazon-app-mesh-meshes-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/app-mesh/
-  - type: OpenAPI
-    url: openapi/amazon-app-mesh-openapi.yaml
   - type: Pricing
     url: https://aws.amazon.com/app-mesh/pricing/
   - type: Getting Started
@@ -56,14 +60,142 @@ apis:
     url: json-structure/amazon-app-mesh-arn-structure.json
   - type: JSONLD
     url: json-ld/amazon-app-mesh-context.jsonld
-  - type: Overlay
-    url: overlays/amazon-app-mesh-openapi-overlay.yaml
   - type: ErrorCatalog
     url: errors/amazon-app-mesh-problem-types.yml
   - type: Conformance
     url: conformance/amazon-app-mesh-conformance.yml
-  - type: MCPServer
-    url: mcp/amazon-app-mesh-mcp.yml
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-llms.txt
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-userguide-llms.txt
+- aid: amazon-app-mesh:amazon-app-mesh-tag-resourcearn-api
+  name: Amazon App Mesh Tag#resourceArn API
+  description: The Tag#resourceArn API from Amazon App Mesh — 1 operation(s) for tag#resourcearn.
+  humanURL: https://aws.amazon.com/app-mesh/
+  baseURL: https://appmesh.amazonaws.com
+  tags:
+  - Tag#resourceArn
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-app-mesh-tag-resourcearn-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/app-mesh/
+  - type: Pricing
+    url: https://aws.amazon.com/app-mesh/pricing/
+  - type: Getting Started
+    url: https://aws.amazon.com/app-mesh/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/app-mesh/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accesslog-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accountid-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-arn-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattribute-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattributekey-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accesslog-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accountid-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-arn-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-app-mesh-context.jsonld
+  - type: ErrorCatalog
+    url: errors/amazon-app-mesh-problem-types.yml
+  - type: Conformance
+    url: conformance/amazon-app-mesh-conformance.yml
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-llms.txt
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-userguide-llms.txt
+- aid: amazon-app-mesh:amazon-app-mesh-tags-resourcearn-api
+  name: Amazon App Mesh Tags#resourceArn API
+  description: The Tags#resourceArn API from Amazon App Mesh — 1 operation(s) for tags#resourcearn.
+  humanURL: https://aws.amazon.com/app-mesh/
+  baseURL: https://appmesh.amazonaws.com
+  tags:
+  - Tags#resourceArn
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-app-mesh-tags-resourcearn-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/app-mesh/
+  - type: Pricing
+    url: https://aws.amazon.com/app-mesh/pricing/
+  - type: Getting Started
+    url: https://aws.amazon.com/app-mesh/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/app-mesh/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accesslog-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accountid-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-arn-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattribute-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattributekey-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accesslog-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accountid-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-arn-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-app-mesh-context.jsonld
+  - type: ErrorCatalog
+    url: errors/amazon-app-mesh-problem-types.yml
+  - type: Conformance
+    url: conformance/amazon-app-mesh-conformance.yml
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-llms.txt
+  - type: LLMsTxt
+    url: llms/amazon-app-mesh-userguide-llms.txt
+- aid: amazon-app-mesh:amazon-app-mesh-untag-resourcearn-api
+  name: Amazon App Mesh Untag#resourceArn API
+  description: The Untag#resourceArn API from Amazon App Mesh — 1 operation(s) for untag#resourcearn.
+  humanURL: https://aws.amazon.com/app-mesh/
+  baseURL: https://appmesh.amazonaws.com
+  tags:
+  - Untag#resourceArn
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-app-mesh-untag-resourcearn-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/app-mesh/
+  - type: Pricing
+    url: https://aws.amazon.com/app-mesh/pricing/
+  - type: Getting Started
+    url: https://aws.amazon.com/app-mesh/getting-started/
+  - type: FAQ
+    url: https://aws.amazon.com/app-mesh/faqs/
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accesslog-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-accountid-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-arn-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattribute-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-app-mesh-awscloudmapinstanceattributekey-schema.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accesslog-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-accountid-structure.json
+  - type: JSONStructure
+    url: json-structure/amazon-app-mesh-arn-structure.json
+  - type: JSONLD
+    url: json-ld/amazon-app-mesh-context.jsonld
+  - type: ErrorCatalog
+    url: errors/amazon-app-mesh-problem-types.yml
+  - type: Conformance
+    url: conformance/amazon-app-mesh-conformance.yml
   - type: LLMsTxt
     url: llms/amazon-app-mesh-llms.txt
   - type: LLMsTxt
