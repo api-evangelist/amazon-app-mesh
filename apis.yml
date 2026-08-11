@@ -201,6 +201,10 @@ apis:
   - type: LLMsTxt
     url: llms/amazon-app-mesh-userguide-llms.txt
 common:
+- type: MCPServer
+  url: mcp/amazon-app-mesh-mcp.yml
+- type: Overlay
+  url: overlays/amazon-app-mesh-openapi-overlay.yaml
 - type: AgenticAccess
   url: agentic-access/amazon-app-mesh-agentic-access.yml
 - type: TrustCenter
