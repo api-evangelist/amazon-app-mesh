@@ -135,3 +135,9 @@ tools:
 - name: untag_resource
   description: Deletes specified tags from a resource.
   source_operation: openapi/amazon-app-mesh-openapi.yaml#UntagResource
+deployment:
+  mode: none
+  verified: derived
+  tools: 38
+  checked: '2026-08-12'
+  source: catalog MCP census
