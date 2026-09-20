@@ -10,6 +10,10 @@ provenance:
   grounding: every price_text was found verbatim in the fetched page text
 audience: developer-api
 pricing_basis: free
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-09-20'
 published: false
 note: Page states no additional charge for App Mesh itself; related service pricing links out, and EKS
   per-hour price shows an unresolved placeholder token rather than a number.
