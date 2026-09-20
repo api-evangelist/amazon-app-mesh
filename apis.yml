@@ -212,6 +212,8 @@ apis:
       - type: LLMsTxt
         url: llms/amazon-app-mesh-userguide-llms.txt
 common:
+  - type: Plans
+    url: plans/amazon-app-mesh-plans-pricing.yml
   - type: CapabilityMap
     url: capabilities/amazon-app-mesh-capability-edges.yml
     name: Amazon App Mesh Business Capability Map

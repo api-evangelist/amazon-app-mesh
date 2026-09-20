@@ -1,0 +1,22 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-09-20'
+method: searched
+source: https://aws.amazon.com/app-mesh/pricing/
+sources:
+- https://aws.amazon.com/app-mesh/pricing/
+provenance:
+  tool: planning/api-economics/harvest_pricing.py
+  run: 20260920T120546
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: free
+published: false
+note: Page states no additional charge for App Mesh itself; related service pricing links out, and EKS
+  per-hour price shows an unresolved placeholder token rather than a number.
+plan_count: 1
+plans:
+- name: AWS App Mesh
+  price_text: There is no additional charge for using AWS App Mesh.
+  period: none
+  included_quota: You pay only for the AWS resources (EC2 instances or requested Fargate CPU and memory)
+    consumed by the lightweight proxy deployed alongside your containers
